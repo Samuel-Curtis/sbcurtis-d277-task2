@@ -1,0 +1,23 @@
+.virginia-page-container {
+    border: blue 4px solid;
+    width: 100%;
+    height: 100%;
+
+    .sidenav {
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+
+    }
+        
+    .landing-sections {
+        border: green solid 2px;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        flex-grow: 1;
+        
+    }
+}
