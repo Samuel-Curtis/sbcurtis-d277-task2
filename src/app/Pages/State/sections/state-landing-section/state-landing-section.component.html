@@ -1,6 +1,9 @@
 <section class="landing-container">
-    <app-state-header class="header"></app-state-header>
-    <p-button class="why-virginia-button">
+    <app-state-header [header]="header" class="header"></app-state-header>
+    <p-button 
+        class="why-virginia-button"
+        (click)="scrollToWhyVirginia()"
+        >
         Why Virginia? 
         <i class="pi pi-arrow-down"></i>
     </p-button>

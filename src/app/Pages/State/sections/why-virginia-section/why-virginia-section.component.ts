@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./why-virginia-section.component.scss']
 })
 export class WhyVirginiaSectionComponent {
-
+  header: string = 'Why Virginia';
 }

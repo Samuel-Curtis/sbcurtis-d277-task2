@@ -13,6 +13,7 @@ import { StateFunFactsComponent } from './Pages/State/components/state-fun-facts
 import { StateSideNavComponent } from './Pages/State/components/state-side-nav/state-side-nav.component';
 import { WhyVirginiaSectionComponent } from './Pages/State/sections/why-virginia-section/why-virginia-section.component';
 import { ExploreOurCitiesSectionComponent } from './Pages/State/sections/explore-our-cities-section/explore-our-cities-section.component';
+import { WhyVirginiaTileComponent } from './Pages/State/components/why-virginia-tile/why-virginia-tile.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ExploreOurCitiesSectionComponent } from './Pages/State/sections/explore
     StateLandingSectionComponent,
     StateFunFactsComponent,
     WhyVirginiaSectionComponent,
-    ExploreOurCitiesSectionComponent
+    ExploreOurCitiesSectionComponent,
+    WhyVirginiaTileComponent
   ],
   imports: [
     BrowserModule,

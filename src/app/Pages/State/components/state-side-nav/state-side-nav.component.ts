@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { StateSection } from '../../models/section-ids.interface';
 
 @Component({
   selector: 'app-state-side-nav',
@@ -7,5 +8,19 @@ import { Component, Input } from '@angular/core';
 })
 export class StateSideNavComponent {
 
+  @Output() scrollEvent = new EventEmitter<StateSection>();
+
   showSidenav: boolean = true;
+
+  scrollToLanding(): void {
+    this.scrollEvent.emit(StateSection.LANDING);
+  }
+
+  scrollToWhyVa(): void {
+    this.scrollEvent.emit(StateSection.WHY_VIRGINIA);
+  }
+
+  scrollToCities(): void {
+    this.scrollEvent.emit(StateSection.EXPLORE_OUR_CITIES);
+  }
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { StateSection } from '../models/section-ids.interface';
 
 @Component({
   selector: 'app-virginia-page',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class VirginiaPageComponent {
 
+  scroll(sectionId: StateSection): void {
+    let element: HTMLElement | null = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({behavior: 'smooth'})
+    }
+  }
 }

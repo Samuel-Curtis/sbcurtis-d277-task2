@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { StateSection } from '../../models/section-ids.interface';
 
 @Component({
   selector: 'app-state-landing-section',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./state-landing-section.component.scss']
 })
 export class StateLandingSectionComponent {
+  header: string = 'Welcome to Virginia';
 
+  @Output() scrollEvent = new EventEmitter<StateSection>();
+
+  scrollToWhyVirginia(): void {
+    this.scrollEvent.emit(StateSection.WHY_VIRGINIA)
+  }
 }

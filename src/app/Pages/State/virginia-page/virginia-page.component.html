@@ -1,9 +1,15 @@
 <div class="virginia-page-container">
-    <app-state-side-nav class="sidenav"></app-state-side-nav>
+    <app-state-side-nav class="sidenav" (scrollEvent)="scroll($event)"></app-state-side-nav>
         <div class="landing-sections">
-            <app-state-landing-section></app-state-landing-section>
-            <app-why-virginia-section></app-why-virginia-section>
-            <app-explore-our-cities-section></app-explore-our-cities-section>
+            <span id="landing">
+                <app-state-landing-section (scrollEvent)="scroll($event)"></app-state-landing-section>
+            </span>
+            <span id="why-va">
+                <app-why-virginia-section ></app-why-virginia-section>
+            </span>
+            <span id="explore-our-cities">
+                <app-explore-our-cities-section></app-explore-our-cities-section>
+            </span>
         </div>
         <!-- <app-state-fun-facts class="sides"></app-state-fun-facts> -->
 </div>
