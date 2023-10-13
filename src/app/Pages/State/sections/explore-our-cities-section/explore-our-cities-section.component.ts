@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./explore-our-cities-section.component.scss']
 })
 export class ExploreOurCitiesSectionComponent {
-
+  header: string = "Explore Our Cities"
 }
