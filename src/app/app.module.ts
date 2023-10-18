@@ -7,6 +7,7 @@ import { StateHeaderComponent } from './Pages/State/components/state-header/stat
 // PrimeNg Module Imports
 import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
+import { CarouselModule } from 'primeng/carousel';
 import { VirginiaPageComponent } from './Pages/State/virginia-page/virginia-page.component';
 import { StateLandingSectionComponent } from './Pages/State/sections/state-landing-section/state-landing-section.component';
 import { StateFunFactsComponent } from './Pages/State/components/state-fun-facts/state-fun-facts.component'
@@ -14,6 +15,11 @@ import { StateSideNavComponent } from './Pages/State/components/state-side-nav/s
 import { WhyVirginiaSectionComponent } from './Pages/State/sections/why-virginia-section/why-virginia-section.component';
 import { ExploreOurCitiesSectionComponent } from './Pages/State/sections/explore-our-cities-section/explore-our-cities-section.component';
 import { WhyVirginiaTileComponent } from './Pages/State/components/why-virginia-tile/why-virginia-tile.component';
+import { CityPageComponent } from './Pages/City/city-page/city-page.component';
+import { CityLandingComponent } from './Pages/City/sections/city-landing/city-landing.component';
+import { ExploreCityComponent } from './Pages/City/sections/explore-city/explore-city.component';
+import { CitySideNavComponent } from './Pages/City/components/city-side-nav/city-side-nav.component';
+import { CityCategoryComponent } from './Pages/City/components/city-category/city-category.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +32,12 @@ import { WhyVirginiaTileComponent } from './Pages/State/components/why-virginia-
     StateFunFactsComponent,
     WhyVirginiaSectionComponent,
     ExploreOurCitiesSectionComponent,
-    WhyVirginiaTileComponent
+    WhyVirginiaTileComponent,
+    CityPageComponent,
+    CityLandingComponent,
+    ExploreCityComponent,
+    CitySideNavComponent,
+    CityCategoryComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +45,8 @@ import { WhyVirginiaTileComponent } from './Pages/State/components/why-virginia-
     BrowserAnimationsModule,
     // PrimeNg Modules
     SidebarModule,
-    ButtonModule
+    ButtonModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

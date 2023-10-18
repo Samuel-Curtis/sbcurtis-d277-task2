@@ -1,0 +1,28 @@
+.city-side-nav-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .heading {
+        margin: 0;
+    }
+
+    .category-list-container {
+        
+        ul {
+            li:hover {
+                cursor: pointer;
+            }
+        }
+
+        .categories {
+            list-style: none;
+
+            .category-item {
+                margin-top: 1rem;
+            }
+        }
+    }
+}

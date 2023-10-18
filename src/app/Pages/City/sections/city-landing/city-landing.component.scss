@@ -1,0 +1,35 @@
+.city-landing-container {
+    width: 100%;
+    height: 100%;
+    padding: 20%;
+
+    .content {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        .headers {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+
+           .city-name {
+            font-size: 5rem;
+            margin: 0;
+           } 
+
+           .city-slogan {
+            font-size: 3.5rem;
+            margin: 0;
+           }
+        }
+
+        .city-description {
+            margin-top: 3rem;
+        }
+    }
+}
