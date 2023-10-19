@@ -1,0 +1,16 @@
+.va-map-container {
+    max-width: 80%;
+    margin-top: 3.5rem;
+    // padding: 15%;
+
+    
+
+    svg #click-roanoke, #click-lynchburg, #click-richmond {
+        cursor: pointer;
+    }
+
+    svg #click-roanoke:hover, #click-lynchburg:hover, #click-richmond:hover {
+        fill: greenyellow !important;
+        width: 100%;
+    }
+}

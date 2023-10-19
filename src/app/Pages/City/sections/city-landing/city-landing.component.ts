@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-city-landing',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./city-landing.component.scss']
 })
 export class CityLandingComponent {
-
+  @Input() city!: string;
 }

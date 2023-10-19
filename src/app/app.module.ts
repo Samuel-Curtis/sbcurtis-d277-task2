@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StateHeaderComponent } from './Pages/State/components/state-header/state-header.component';
 // PrimeNg Module Imports
 import { SidebarModule } from 'primeng/sidebar';
+import { DialogModule } from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
 import { CarouselModule } from 'primeng/carousel';
 import { VirginiaPageComponent } from './Pages/State/virginia-page/virginia-page.component';
@@ -20,6 +21,7 @@ import { CityLandingComponent } from './Pages/City/sections/city-landing/city-la
 import { ExploreCityComponent } from './Pages/City/sections/explore-city/explore-city.component';
 import { CitySideNavComponent } from './Pages/City/components/city-side-nav/city-side-nav.component';
 import { CityCategoryComponent } from './Pages/City/components/city-category/city-category.component';
+import { VaMapComponent } from './Pages/State/components/va-map/va-map.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,8 @@ import { CityCategoryComponent } from './Pages/City/components/city-category/cit
     CityLandingComponent,
     ExploreCityComponent,
     CitySideNavComponent,
-    CityCategoryComponent
+    CityCategoryComponent,
+    VaMapComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +49,8 @@ import { CityCategoryComponent } from './Pages/City/components/city-category/cit
     // PrimeNg Modules
     SidebarModule,
     ButtonModule,
-    CarouselModule
+    CarouselModule,
+    DialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,11 +2,15 @@
     <app-state-header [header]="header" class="header"></app-state-header>
 
     <div class="map-container">
-        <object 
-            class="map" 
-            data="assets/usa-va.svg" 
-            type="image/svg+xml"
-            >
-        </object>
+        <app-va-map (openModal)="openModal($event)"></app-va-map>
     </div>
+
+    <p-dialog header="{{ currentCity.name }}" [(visible)]="showModal">
+        
+        <div class="dialog-content-container">
+            {{currentCity.description}}
+            <p-button (click)="routeToCity()">Learn More</p-button>
+        </div>
+    
+    </p-dialog>
 </section>

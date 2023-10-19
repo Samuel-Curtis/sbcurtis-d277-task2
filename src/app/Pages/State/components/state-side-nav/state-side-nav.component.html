@@ -7,9 +7,9 @@
         </ul>
         <ul class="city-nav">
             <li (click)="scrollToCities()">Explore Our Cities</li>
-            <li>Richmond</li>
-            <li>Lynchburg</li>
-            <li>Roanoke</li>
+            <li><a [routerLink]="['city', 'Richmond']">Richmond</a></li>
+            <li><a [routerLink]="['city', 'Lynchburg']">Lynchburg</a></li>
+            <li><a [routerLink]="['city', 'Roanoke']">Roanoke</a></li>
         </ul>
     </nav>
     
