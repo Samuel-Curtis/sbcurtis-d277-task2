@@ -22,6 +22,7 @@ import { ExploreCityComponent } from './Pages/City/sections/explore-city/explore
 import { CitySideNavComponent } from './Pages/City/components/city-side-nav/city-side-nav.component';
 import { CityCategoryComponent } from './Pages/City/components/city-category/city-category.component';
 import { VaMapComponent } from './Pages/State/components/va-map/va-map.component';
+import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,7 @@ import { VaMapComponent } from './Pages/State/components/va-map/va-map.component
     CarouselModule,
     DialogModule
   ],
-  providers: [],
+  providers: [{provide: APP_BASE_HREF, useValue: "/sbcurtis-d277-task2/"}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
