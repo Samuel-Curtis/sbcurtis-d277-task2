@@ -2,6 +2,10 @@
     width: 100%;
     height: 100%;
 
+    .side {
+
+    }
+
     .sidenav {
         position: fixed;
         z-index: 1;
@@ -9,6 +13,14 @@
         top: 50%;
         transform: translate(0, -50%);
 
+    }
+
+    .fun-facts {
+        position: fixed;
+        z-index: 1;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
     }
         
     .landing-sections {
