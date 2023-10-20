@@ -2,7 +2,7 @@
     <app-state-header [header]="header" class="header"></app-state-header>
 
     <div class="map-container">
-        <app-va-map (openModal)="openModal($event)"></app-va-map>
+        <app-va-map class="map" (openModal)="openModal($event)"></app-va-map>
     </div>
 
     <p-dialog header="{{ currentCity.name }}" [(visible)]="showModal">

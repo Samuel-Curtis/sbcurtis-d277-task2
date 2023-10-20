@@ -1,16 +1,23 @@
 <div class="side-nav-container">
     
-    <nav class="nav-bar">
-        <ul class="nav-list">
-            <li (click)="scrollToLanding()">Home</li>
-            <li (click)="scrollToWhyVa()">Why Virginia</li>
-        </ul>
-        <ul class="city-nav">
-            <li (click)="scrollToCities()">Explore Our Cities</li>
-            <li><a [routerLink]="['city', 'Richmond']">Richmond</a></li>
-            <li><a [routerLink]="['city', 'Lynchburg']">Lynchburg</a></li>
-            <li><a [routerLink]="['city', 'Roanoke']">Roanoke</a></li>
-        </ul>
-    </nav>
-    
+    <div [style.width]="navContainerWidth" class="nav-container">
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li (click)="scrollToLanding()">Home</li>
+                <li (click)="scrollToWhyVa()">Why Virginia</li>
+            </ul>
+            <ul class="city-nav">
+                <li (click)="scrollToCities()">Explore Our Cities</li>
+                <li><a [routerLink]="['city', 'Richmond']">Richmond</a></li>
+                <li><a [routerLink]="['city', 'Lynchburg']">Lynchburg</a></li>
+                <li><a [routerLink]="['city', 'Roanoke']">Roanoke</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="toggle-button">
+        <p-button *ngIf="!navbarClosed" icon="pi pi-times" [text]="true" (click)="toggleNav()"></p-button>
+        <p-button *ngIf="navbarClosed" icon="pi pi-chevron-right" [text]="true" (click)="toggleNav()"></p-button>
+    </div>
 </div>
+
