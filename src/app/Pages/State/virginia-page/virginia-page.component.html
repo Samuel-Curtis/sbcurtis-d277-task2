@@ -1,7 +1,7 @@
 <div class="virginia-page-container">
     
     <app-state-side-nav class="sidenav" (scrollEvent)="scroll($event)"></app-state-side-nav>
-    <app-state-fun-facts class="fun-facts"></app-state-fun-facts>
+    <app-fun-facts [funFacts]="stateFunFacts" class="fun-facts"></app-fun-facts>
 
     <div class="landing-sections">
             <span id="landing">
@@ -13,7 +13,7 @@
             <span id="explore-our-cities">
                 <app-explore-our-cities-section></app-explore-our-cities-section>
             </span>
-        </div>
+    </div>
         
 </div>
 

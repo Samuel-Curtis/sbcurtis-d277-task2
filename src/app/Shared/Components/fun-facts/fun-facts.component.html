@@ -1,16 +1,15 @@
-<aside class="state-fun-facts-container">
+<aside class="fun-facts-container">
 
-    
     <div [style.width]="funFactsWidth" class="fun-facts">
         <h3>Did you know?</h3>
         <div class="fact-content">
             <p class="fact">
-                {{ funFacts[currentFactIndex].content }}
+                {{ funFacts[currentFactIndex] }}
             </p>
         </div>
         <div class="button-container">
-            <p-button (click)="getPreviousFact()"><</p-button>
-            <p-button (click)="getNextFact()">></p-button>
+            <p-button icon="pi pi-arrow-left" (click)="getPreviousFact()"></p-button>
+            <p-button icon="pi pi-arrow-right" (click)="getNextFact()"></p-button>
         </div>
     </div>
 

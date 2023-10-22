@@ -1,30 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-state-fun-facts',
-  templateUrl: './state-fun-facts.component.html',
-  styleUrls: ['./state-fun-facts.component.scss']
+  selector: 'app-fun-facts',
+  templateUrl: './fun-facts.component.html',
+  styleUrls: ['./fun-facts.component.scss']
 })
-export class StateFunFactsComponent {
+export class FunFactsComponent {
 
   currentFactIndex: number = 0;
   funFactsClosed: boolean = false;
   funFactsWidth: string = "12rem"
 
-  funFacts = [
-    {
-      content: 'Fun Fact 1'
-    },
-    {
-      content: 'Fun Fact 2'
-    },
-    {
-      content: 'Fun Fact 3'
-    },
-    {
-      content: 'Fun Fact 4'
-    },
-  ]
+  @Input() funFacts!: string[];
 
   getNextFact() {
     if ((this.currentFactIndex + 1) >= this.funFacts.length) {

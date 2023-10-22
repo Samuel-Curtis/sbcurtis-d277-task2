@@ -1,9 +1,12 @@
 <div class="city-page-container">
+
+    <app-fun-facts [funFacts]="cityFunFacts" class="fun-facts"></app-fun-facts>
+
     <span class="city-landing">
         <app-city-landing [city]="city"></app-city-landing>
     </span>
 
     <span class="explore-city">
-        <app-explore-city></app-explore-city>
+        <app-explore-city [city]="city"></app-explore-city>
     </span>
 </div>

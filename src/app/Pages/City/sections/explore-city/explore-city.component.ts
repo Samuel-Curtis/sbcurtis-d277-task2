@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-explore-city',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./explore-city.component.scss']
 })
 export class ExploreCityComponent {
-
+  @Input() city!: string;
 }

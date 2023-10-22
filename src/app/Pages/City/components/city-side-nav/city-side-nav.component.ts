@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-city-side-nav',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./city-side-nav.component.scss']
 })
 export class CitySideNavComponent {
-
+  @Input() city!: string;
 }

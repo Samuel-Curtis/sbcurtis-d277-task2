@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StateFunFactsComponent } from './state-fun-facts.component';
+import { FunFactsComponent } from './fun-facts.component';
 
 describe('StateFunFactsComponent', () => {
-  let component: StateFunFactsComponent;
-  let fixture: ComponentFixture<StateFunFactsComponent>;
+  let component: FunFactsComponent;
+  let fixture: ComponentFixture<FunFactsComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [StateFunFactsComponent]
+      declarations: [FunFactsComponent]
     });
-    fixture = TestBed.createComponent(StateFunFactsComponent);
+    fixture = TestBed.createComponent(FunFactsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

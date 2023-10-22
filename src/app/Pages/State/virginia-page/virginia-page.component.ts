@@ -8,6 +8,13 @@ import { StateSection } from '../models/section-ids.interface';
 })
 export class VirginiaPageComponent {
 
+  stateFunFacts: string[] = [
+    'Test Fun Fact 1',
+    'Test Fun Fact 2',
+    'Test Fun Fact 3',
+    'Test Fun Fact 4',
+  ]
+
   scroll(sectionId: StateSection): void {
     let element: HTMLElement | null = document.getElementById(sectionId)
     if (element) {

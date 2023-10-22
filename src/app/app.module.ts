@@ -12,7 +12,7 @@ import { ButtonModule } from 'primeng/button';
 import { CarouselModule } from 'primeng/carousel';
 import { VirginiaPageComponent } from './Pages/State/virginia-page/virginia-page.component';
 import { StateLandingSectionComponent } from './Pages/State/sections/state-landing-section/state-landing-section.component';
-import { StateFunFactsComponent } from './Pages/State/components/state-fun-facts/state-fun-facts.component'
+import { FunFactsComponent } from './Shared/Components/fun-facts/fun-facts.component'
 import { StateSideNavComponent } from './Pages/State/components/state-side-nav/state-side-nav.component';
 import { WhyVirginiaSectionComponent } from './Pages/State/sections/why-virginia-section/why-virginia-section.component';
 import { ExploreOurCitiesSectionComponent } from './Pages/State/sections/explore-our-cities-section/explore-our-cities-section.component';
@@ -33,7 +33,7 @@ import { APP_BASE_HREF } from '@angular/common';
     VirginiaPageComponent,
     StateLandingSectionComponent,
     StateLandingSectionComponent,
-    StateFunFactsComponent,
+    FunFactsComponent,
     WhyVirginiaSectionComponent,
     ExploreOurCitiesSectionComponent,
     WhyVirginiaTileComponent,

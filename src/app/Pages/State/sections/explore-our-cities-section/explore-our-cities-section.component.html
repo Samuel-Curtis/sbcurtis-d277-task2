@@ -5,7 +5,7 @@
         <app-va-map class="map" (openModal)="openModal($event)"></app-va-map>
     </div>
 
-    <p-dialog header="{{ currentCity.name }}" [(visible)]="showModal">
+    <p-dialog [style]="{ width: '50%' }" header="{{ currentCity.name }}" [(visible)]="showModal">
         
         <div class="dialog-content-container">
             {{currentCity.description}}
