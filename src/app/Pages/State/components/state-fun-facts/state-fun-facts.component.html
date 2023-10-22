@@ -1,4 +1,22 @@
-<div class="state-fun-facts-container">
-    <p>state-fun-facts works!</p>
+<aside class="state-fun-facts-container">
 
-</div>
+    
+    <div [style.width]="funFactsWidth" class="fun-facts">
+        <h3>Did you know?</h3>
+        <div class="fact-content">
+            <p class="fact">
+                {{ funFacts[currentFactIndex].content }}
+            </p>
+        </div>
+        <div class="button-container">
+            <p-button (click)="getPreviousFact()"><</p-button>
+            <p-button (click)="getNextFact()">></p-button>
+        </div>
+    </div>
+
+    <div class="toggle-button">
+        <p-button *ngIf="!funFactsClosed" icon="pi pi-times" [text]="true" (click)="toggleFacts()"></p-button>
+        <p-button *ngIf="funFactsClosed" icon="pi pi-chevron-right" [text]="true" (click)="toggleFacts()"></p-button>
+    </div>
+
+</aside>

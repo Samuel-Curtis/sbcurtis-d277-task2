@@ -14,11 +14,11 @@ export class CityCategoryComponent {
     },
     {
       img: 'assets/bar-chart.svg',
-      description: 'description 1'
+      description: 'description 2'
     },
     {
       img: 'assets/bar-chart.svg',
-      description: 'description 1'
+      description: 'description 3'
     }
   ]
 }

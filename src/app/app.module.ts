@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StateHeaderComponent } from './Pages/State/components/state-header/state-header.component';
 // PrimeNg Module Imports
 import { SidebarModule } from 'primeng/sidebar';
+import { PaginatorModule } from 'primeng/paginator';
 import { DialogModule } from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
 import { CarouselModule } from 'primeng/carousel';
@@ -51,7 +52,8 @@ import { APP_BASE_HREF } from '@angular/common';
     SidebarModule,
     ButtonModule,
     CarouselModule,
-    DialogModule
+    DialogModule,
+    PaginatorModule
   ],
   providers: [{provide: APP_BASE_HREF, useValue: "/sbcurtis-d277-task2/"}],
   bootstrap: [AppComponent]
