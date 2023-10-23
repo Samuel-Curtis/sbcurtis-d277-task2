@@ -1,5 +1,6 @@
 export enum StateSection {
     LANDING = 'landing',
     WHY_VIRGINIA = 'why-va',
-    EXPLORE_OUR_CITIES = 'explore-our-cities'
+    EXPLORE_OUR_CITIES = 'explore-our-cities',
+    LEARN_MORE = 'learn-more'
 }

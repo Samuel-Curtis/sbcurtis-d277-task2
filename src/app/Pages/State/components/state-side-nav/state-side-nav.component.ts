@@ -25,6 +25,10 @@ export class StateSideNavComponent {
     this.scrollEvent.emit(StateSection.EXPLORE_OUR_CITIES);
   }
 
+  scrollToLearnMore(): void {
+    this.scrollEvent.emit(StateSection.LEARN_MORE);
+  }
+
   toggleNav(): void {
     if (this.navContainerWidth == '100%') {
       this.navContainerWidth = '0%'

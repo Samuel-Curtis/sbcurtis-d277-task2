@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StateHeaderComponent } from './Pages/State/components/state-header/state-header.component';
 // PrimeNg Module Imports
 import { SidebarModule } from 'primeng/sidebar';
+import { InputTextModule } from 'primeng/inputtext';
 import { PaginatorModule } from 'primeng/paginator';
 import { DialogModule } from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
@@ -24,6 +25,7 @@ import { CitySideNavComponent } from './Pages/City/components/city-side-nav/city
 import { CityCategoryComponent } from './Pages/City/components/city-category/city-category.component';
 import { VaMapComponent } from './Pages/State/components/va-map/va-map.component';
 import { APP_BASE_HREF } from '@angular/common';
+import { LearnMoreSectionComponent } from './Pages/State/sections/learn-more-section/learn-more-section.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,8 @@ import { APP_BASE_HREF } from '@angular/common';
     ExploreCityComponent,
     CitySideNavComponent,
     CityCategoryComponent,
-    VaMapComponent
+    VaMapComponent,
+    LearnMoreSectionComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +56,8 @@ import { APP_BASE_HREF } from '@angular/common';
     ButtonModule,
     CarouselModule,
     DialogModule,
-    PaginatorModule
+    PaginatorModule,
+    InputTextModule
   ],
   providers: [{provide: APP_BASE_HREF, useValue: "/sbcurtis-d277-task2/"}],
   bootstrap: [AppComponent]
