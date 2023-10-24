@@ -26,6 +26,7 @@ import { CityCategoryComponent } from './Pages/City/components/city-category/cit
 import { VaMapComponent } from './Pages/State/components/va-map/va-map.component';
 import { APP_BASE_HREF } from '@angular/common';
 import { LearnMoreSectionComponent } from './Pages/State/sections/learn-more-section/learn-more-section.component';
+import { CompareCitiesComponent } from './Pages/City/sections/compare-cities/compare-cities.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { LearnMoreSectionComponent } from './Pages/State/sections/learn-more-sec
     CitySideNavComponent,
     CityCategoryComponent,
     VaMapComponent,
-    LearnMoreSectionComponent
+    LearnMoreSectionComponent,
+    CompareCitiesComponent
   ],
   imports: [
     BrowserModule,
