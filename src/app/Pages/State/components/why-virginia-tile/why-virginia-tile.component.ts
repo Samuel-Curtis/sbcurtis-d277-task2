@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { WhyVirginiaTile } from '../../models/why-virginia-tile.interface';
 
 @Component({
   selector: 'app-why-virginia-tile',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./why-virginia-tile.component.scss']
 })
 export class WhyVirginiaTileComponent {
-
+  @Input() tile!: WhyVirginiaTile;
 }

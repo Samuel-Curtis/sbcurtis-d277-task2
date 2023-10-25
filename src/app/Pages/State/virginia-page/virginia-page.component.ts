@@ -8,6 +8,7 @@ import { StateSection } from '../models/section-ids.interface';
 })
 export class VirginiaPageComponent {
 
+  // Pull from data
   stateFunFacts: string[] = [
     'Test Fun Fact 1',
     'Test Fun Fact 2',

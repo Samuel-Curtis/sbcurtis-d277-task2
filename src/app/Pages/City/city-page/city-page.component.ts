@@ -8,6 +8,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CityPageComponent implements OnInit {
   @Input() city!: string;
+  
+  // Pull from data
   cityFunFacts = [
     'City Fun Fact 1',
     'City Fun Fact 2',

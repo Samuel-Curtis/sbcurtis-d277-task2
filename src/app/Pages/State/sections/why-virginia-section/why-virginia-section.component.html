@@ -1,11 +1,10 @@
 <section class="why-virginia-section" #whyVA>
     <app-state-header [header]="header" class="header"></app-state-header>
     <div class="tiles">
-        <app-why-virginia-tile></app-why-virginia-tile>
-        <app-why-virginia-tile></app-why-virginia-tile>
-        <app-why-virginia-tile></app-why-virginia-tile>
-        <app-why-virginia-tile></app-why-virginia-tile>
-        <app-why-virginia-tile></app-why-virginia-tile>
+        <span *ngFor="let tile of tiles">
+            <app-why-virginia-tile [tile]="tile"></app-why-virginia-tile>
+
+        </span>
 
     </div>
 </section>
