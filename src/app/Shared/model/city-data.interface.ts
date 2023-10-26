@@ -2,12 +2,13 @@ export interface CityData {
     name: string;
     slogan?: string;
     description: string;
+    funFacts?: string[]
     categories?: Category[];
 }
 
 export interface Category {
     name: string;
-    items: Item[]
+    items?: Item[]
 }
 
 export interface Item {

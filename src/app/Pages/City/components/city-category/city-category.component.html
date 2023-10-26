@@ -1,16 +1,19 @@
 <div class="city-category-container">
-    <h3 class="category-title">Category X</h3>
+    <h3 class="category-title">{{ currentCategory.name }}</h3>
+    
 
     <div class="carousel-container">
-        <p-carousel [value]="categories" [numVisible]="1" [numScroll]="1" [circular]="true" [autoplayInterval]="3000">
-            <ng-template let-category pTemplate="item">
+        <p-carousel [value]="currentItems" [numVisible]="1" [numScroll]="1" [circular]="true" [autoplayInterval]="3000">
+
+            <ng-template let-item pTemplate="item">
+                <h3>{{ item.name }}</h3>
                 <div class="category-item">
                     <div class="category-image">
-                        <img src="{{ category.img }}" alt="">
+                        <img src="{{ item.imageUrl }}" alt="">
                     </div>
     
                     <div class="category-description">
-                        <p>{{ category.description }}</p>
+                        <p>{{ item.description }}</p>
                     </div>
                 </div>
             </ng-template>

@@ -2,16 +2,18 @@
     
     <div [style.width]="navContainerWidth" class="nav-container">
         <nav class="nav-bar">
-            <ul class="nav-list">
+            <ul *ngIf="showScrollOptions" class="nav-list">
                 <li (click)="scrollToLanding()">Home</li>
                 <li (click)="scrollToWhyVa()">Why Virginia</li>
                 <li (click)="scrollToLearnMore()">Learn More</li>
+                <li (click)="scrollToCities()">Explore Our Cities</li>
             </ul>
             <ol class="city-nav">
-                <li (click)="scrollToCities()">Explore Our Cities</li>
-                <li><a [routerLink]="['city', 'Richmond']">Richmond</a></li>
-                <li><a [routerLink]="['city', 'Lynchburg']">Lynchburg</a></li>
-                <li><a [routerLink]="['city', 'Roanoke']">Roanoke</a></li>
+                <li *ngIf="!showScrollOptions"><a [routerLink]="['/']">Home</a></li>
+                <li *ngIf="!showScrollOptions">Explore Our Cities</li>
+                <li><a [routerLink]="['/city', 'Richmond']">Richmond</a></li>
+                <li><a [routerLink]="['/city', 'Lynchburg']">Lynchburg</a></li>
+                <li><a [routerLink]="['/city', 'Roanoke']">Roanoke</a></li>
             </ol>
         </nav>
     </div>

@@ -14,7 +14,7 @@ import { CarouselModule } from 'primeng/carousel';
 import { VirginiaPageComponent } from './Pages/State/virginia-page/virginia-page.component';
 import { StateLandingSectionComponent } from './Pages/State/sections/state-landing-section/state-landing-section.component';
 import { FunFactsComponent } from './Shared/Components/fun-facts/fun-facts.component'
-import { StateSideNavComponent } from './Pages/State/components/state-side-nav/state-side-nav.component';
+import { SideNavComponent } from './Shared/Components/side-nav/side-nav.component';
 import { WhyVirginiaSectionComponent } from './Pages/State/sections/why-virginia-section/why-virginia-section.component';
 import { ExploreOurCitiesSectionComponent } from './Pages/State/sections/explore-our-cities-section/explore-our-cities-section.component';
 import { WhyVirginiaTileComponent } from './Pages/State/components/why-virginia-tile/why-virginia-tile.component';
@@ -32,7 +32,7 @@ import { CompareCitiesComponent } from './Pages/City/sections/compare-cities/com
   declarations: [
     AppComponent,
     StateHeaderComponent,
-    StateSideNavComponent,
+    SideNavComponent,
     VirginiaPageComponent,
     StateLandingSectionComponent,
     StateLandingSectionComponent,

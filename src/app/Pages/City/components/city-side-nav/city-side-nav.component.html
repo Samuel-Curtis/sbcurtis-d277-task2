@@ -5,11 +5,9 @@
 
     <div class="category-list-container">
         <ul class="categories">
-            <li class="category-item">Category 1</li>
-            <li class="category-item">Category 2</li>
-            <li class="category-item">Category 3</li>
-            <li class="category-item">Category 4</li>
-            <li class="category-item">Category 5</li>
+            <span *ngFor="let category of categories">
+                <li (click)="showCategory(category)" class="category-item">{{ category.name }}</li>
+            </span>
         </ul>
     </div>
 </div>

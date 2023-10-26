@@ -1,10 +1,10 @@
 <section class="explore-city-container">
     <span id="city-side-nav">
-        <app-city-side-nav [city]="city"></app-city-side-nav>
+        <app-city-side-nav (showCategoryEmitter)="showCategory($event)" [city]="city"></app-city-side-nav>
     </span>
 
     <span id="city-category">
-        <app-city-category></app-city-category>
+        <app-city-category [currentCategory]="currentCategory"></app-city-category>
     </span>
 
 </section>

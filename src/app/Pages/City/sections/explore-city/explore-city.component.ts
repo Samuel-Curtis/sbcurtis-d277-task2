@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Category } from 'src/app/Shared/model/city-data.interface';
 
 @Component({
   selector: 'app-explore-city',
@@ -7,4 +8,20 @@ import { Component, Input } from '@angular/core';
 })
 export class ExploreCityComponent {
   @Input() city!: string;
+  currentCategory: Category = {
+    name: 'test',
+    items: [
+      {
+        name: 'test',
+        description: 'test',
+        link: '',
+        imageUrl: 'assets/bar-chart.svg',
+        imageAltText: 'test'
+      }
+    ]
+  }
+
+  showCategory(category: Category) {
+    this.currentCategory = category
+  }
 }

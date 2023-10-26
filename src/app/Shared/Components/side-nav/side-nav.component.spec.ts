@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StateSideNavComponent } from './state-side-nav.component';
+import { SideNavComponent } from './side-nav.component';
 
 describe('SideNavComponent', () => {
-  let component: StateSideNavComponent;
-  let fixture: ComponentFixture<StateSideNavComponent>;
+  let component: SideNavComponent;
+  let fixture: ComponentFixture<SideNavComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [StateSideNavComponent]
+      declarations: [SideNavComponent]
     });
-    fixture = TestBed.createComponent(StateSideNavComponent);
+    fixture = TestBed.createComponent(SideNavComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
