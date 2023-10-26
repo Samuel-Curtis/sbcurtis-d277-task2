@@ -30,6 +30,15 @@
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
+
+            .invalid {
+                border: solid red 2px;
+            }
+        }
+
+        .submitted {
+            margin: 3rem;
+            font-size: 3.5rem;
         }
     }
 }

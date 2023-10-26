@@ -3,10 +3,10 @@
     <div [style.width]="navContainerWidth" class="nav-container">
         <nav class="nav-bar">
             <ul *ngIf="showScrollOptions" class="nav-list">
-                <li (click)="scrollToLanding()">Home</li>
-                <li (click)="scrollToWhyVa()">Why Virginia</li>
-                <li (click)="scrollToLearnMore()">Learn More</li>
-                <li (click)="scrollToCities()">Explore Our Cities</li>
+                <li (click)="scroll('landing')">Home</li>
+                <li (click)="scroll('why-va')">Why Virginia</li>
+                <li (click)="scroll('learn-more')">Learn More</li>
+                <li (click)="scroll('explore-our-cities')">Explore Our Cities</li>
             </ul>
             <ol class="city-nav">
                 <li *ngIf="!showScrollOptions"><a [routerLink]="['/']">Home</a></li>

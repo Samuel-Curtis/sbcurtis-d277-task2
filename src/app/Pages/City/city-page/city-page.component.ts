@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Category } from 'src/app/Shared/model/city-data.interface';
 
 @Component({
   selector: 'app-city-page',

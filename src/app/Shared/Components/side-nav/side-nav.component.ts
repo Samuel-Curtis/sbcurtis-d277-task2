@@ -14,21 +14,22 @@ export class SideNavComponent {
   navContainerWidth: string = '100%'
   navbarClosed: boolean = false;
 
-
-  scrollToLanding(): void {
-    this.scrollEvent.emit(StateSection.LANDING);
-  }
-
-  scrollToWhyVa(): void {
-    this.scrollEvent.emit(StateSection.WHY_VIRGINIA);
-  }
-
-  scrollToCities(): void {
-    this.scrollEvent.emit(StateSection.EXPLORE_OUR_CITIES);
-  }
-
-  scrollToLearnMore(): void {
-    this.scrollEvent.emit(StateSection.LEARN_MORE);
+  scroll(section: string) {
+    switch (section) {
+      case 'landing':
+        this.scrollEvent.emit(StateSection.LANDING);
+        break;
+      case 'why-va':
+        this.scrollEvent.emit(StateSection.WHY_VIRGINIA);
+        break;
+      case 'explore-our-cities':
+        this.scrollEvent.emit(StateSection.EXPLORE_OUR_CITIES);
+        break;
+      case 'learn-more':
+        this.scrollEvent.emit(StateSection.LEARN_MORE);
+        break;
+      
+    }
   }
 
   toggleNav(): void {

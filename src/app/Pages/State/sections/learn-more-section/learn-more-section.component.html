@@ -3,7 +3,7 @@
 
     <div class="form-container">
         <h3>Sign up now to learn more about Virginia!</h3>
-        <form class="form">
+        <form *ngIf="!submitted" class="form">
             <div class="p-inputgroup">
                 <span class="p-inputgroup-addon">
                     <i class="pi pi-user"></i>
@@ -20,17 +20,33 @@
                 <span class="p-inputgroup-addon">
                     <i class="pi pi-envelope"></i>
                 </span>
-                <input pInputText placeholder="Email" />
+                <input [(ngModel)]="email"
+                        name="email" 
+                        (keyup)="checkEmails()" 
+                        type="email" 
+                        pInputText 
+                        placeholder="Email" />
             </div>
             
             <div class="p-inputgroup">
                 <span class="p-inputgroup-addon">
                     <i class="pi pi-envelope"></i>
                 </span>
-                <input pInputText placeholder="Confirm Email" />
+                <input [(ngModel)]="confirmEmail"
+                        [ngClass]="emailsMatch ? '' : 'invalid'"
+                        [style.border]="confirmEmail && emailsMatch ? 'solid green 2px' : ''"
+                        name="confirmEmail" 
+                        (keyup)="checkEmails()" 
+                        type="email" 
+                        pInputText 
+                        placeholder="Confirm Email" />
             </div>
 
-            <p-button>Submit</p-button>
+            <p-button [disabled]="!emailsMatch" (click)="submit()">Submit</p-button>
         </form>
+
+        <div *ngIf="submitted" class="submitted">
+            Thanks for signing up!
+        </div>
     </div>
 </section>
