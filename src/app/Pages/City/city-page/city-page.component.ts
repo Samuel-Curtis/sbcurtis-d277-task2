@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { CityData } from 'src/app/Shared/model/city-data.interface';
+import { lynchburgData, richmondData, roanokeData } from 'src/assets/data/data';
 
 @Component({
   selector: 'app-city-page',
@@ -8,14 +10,16 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CityPageComponent implements OnInit {
   @Input() city!: string;
+
+  currentCity!: CityData | null;
   
   // Pull from data
-  cityFunFacts = [
-    'City Fun Fact 1',
-    'City Fun Fact 2',
-    'City Fun Fact 3',
-    'City Fun Fact 4',
-    'City Fun Fact 5',
+  cityFunFacts!: string[];
+
+  cities: CityData[] = [
+    richmondData.data,
+    roanokeData.data,
+    lynchburgData.data
   ]
 
   constructor(public activatedRoute: ActivatedRoute) {}
@@ -23,6 +27,14 @@ export class CityPageComponent implements OnInit {
   ngOnInit() {
     this.activatedRoute.params.subscribe(data => {
       this.city = data['city']
+
+      this.setCurrentCity()
     })
+  }
+
+  setCurrentCity(): void {
+    this.currentCity = this.cities.find((data) => data.name == this.city) || null
+    this.cityFunFacts = this.currentCity?.funFacts || [];
+    
   }
 }

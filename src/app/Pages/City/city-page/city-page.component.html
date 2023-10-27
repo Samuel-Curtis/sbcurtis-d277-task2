@@ -1,14 +1,14 @@
-<div class="city-page-container">
+<div *ngIf="currentCity" class="city-page-container">
 
     <app-side-nav [showScrollOptions]="false" class="sidenav"></app-side-nav>
     <app-fun-facts [funFacts]="cityFunFacts" class="fun-facts"></app-fun-facts>
 
     <span class="city-landing">
-        <app-city-landing [city]="city"></app-city-landing>
+        <app-city-landing [city]="currentCity"></app-city-landing>
     </span>
 
     <span class="explore-city">
-        <app-explore-city [city]="city"></app-explore-city>
+        <app-explore-city [city]="currentCity"></app-explore-city>
     </span>
 
     <span class="compare-cities">

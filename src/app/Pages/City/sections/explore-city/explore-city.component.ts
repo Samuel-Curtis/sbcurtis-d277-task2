@@ -1,27 +1,28 @@
-import { Component, Input } from '@angular/core';
-import { Category } from 'src/app/Shared/model/city-data.interface';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Category, CityData } from 'src/app/Shared/model/city-data.interface';
 
 @Component({
   selector: 'app-explore-city',
   templateUrl: './explore-city.component.html',
   styleUrls: ['./explore-city.component.scss']
 })
-export class ExploreCityComponent {
-  @Input() city!: string;
-  currentCategory: Category = {
-    name: 'test',
-    items: [
-      {
-        name: 'test',
-        description: 'test',
-        link: '',
-        imageUrl: 'assets/bar-chart.svg',
-        imageAltText: 'test'
-      }
-    ]
+export class ExploreCityComponent implements OnInit, OnChanges {
+  @Input() city!: CityData;
+  currentCategory!: Category;
+
+  ngOnInit(): void {
+    this.currentCategory = this.city.categories![0]
+  }
+
+  // THIS FIXED IT!
+  ngOnChanges(changes: SimpleChanges): void {
+    this.currentCategory = this.city.categories![0]
   }
 
   showCategory(category: Category) {
-    this.currentCategory = category
+    let newCategory = this.city.categories?.find(data => data.name == category.name )
+    if (newCategory) {
+      this.currentCategory = newCategory
+    }
   }
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { CityData } from 'src/app/Shared/model/city-data.interface';
+import { lynchburgData, richmondData, roanokeData } from 'src/assets/data/data';
 
 @Component({
   selector: 'app-explore-our-cities-section',
@@ -13,22 +14,11 @@ export class ExploreOurCitiesSectionComponent {
   showModal: boolean = false;
   currentCity: CityData | null = null
 
-  // Pull from Data
   cities: CityData[] = [
-    {
-      name: 'Richmond',
-      description: 'Richmond Description'
-    },
-    {
-      name: 'Roanoke',
-      description: 'Roanoke Description'
-    },
-    {
-      name: 'Lynchburg',
-      description: 'Lynchburg Description'
-    }
+    richmondData.data,
+    roanokeData.data,
+    lynchburgData.data
   ]
-
 
   constructor(public router: Router) {}
 
