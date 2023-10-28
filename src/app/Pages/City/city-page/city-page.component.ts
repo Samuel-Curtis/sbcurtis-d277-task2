@@ -12,8 +12,6 @@ export class CityPageComponent implements OnInit {
   @Input() city!: string;
 
   currentCity!: CityData | null;
-  
-  // Pull from data
   cityFunFacts!: string[];
 
   cities: CityData[] = [

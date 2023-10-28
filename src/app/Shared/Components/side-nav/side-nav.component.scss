@@ -5,12 +5,15 @@
     .nav-container {
         transition: .3s;
         overflow: hidden;
-        border: black solid 1px;
+        box-shadow: .2rem .35rem rgba(255, 255, 255, .25);
+        border-radius: 0 1rem 1rem 0;
         width: 0%;
         height: 20rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        background: rgba(255, 255, 255, .5);
+        
     
         .nav-bar {
             display: flex;
@@ -18,24 +21,61 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 0 1.5rem;
+            width: 12rem;
+            overflow: visible;
 
             ul {
                 margin: 0;
+                width: 100%;
+
+                li {
+                    font-size: 1.2rem;
+                    width: 100%;
+                    padding: .5rem;
+                    transition: .5s;
+                }
 
                 li:hover {
+                    padding: .8rem;
                     cursor: pointer;
+                    background-color: rgba(85, 115, 175, .5);
+                    transition: .5s;
                 }
             }
     
             ol {
                 margin: 0;
+                width: 100%;
                 
                 li {
-                    a:hover {
-                        cursor: pointer;
+                    width: 75%;
+                    // border: solid black;
+                    padding: .3rem;
+                    transition: .5s;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
                     }
 
+                    i {
+                        margin-left: .5rem;
+                        transition: .5s;
+                    }
+
+                }
+
+                li:hover {
+                    padding: .5rem;
+                    cursor: pointer;
+                    background-color: rgba(85, 115, 175, .5);
+                    transition: .5s;
+                    margin-left: .5rem;
+
+                    i {
+                        margin-left: 1rem;
+                        transition: .5s;
+                    }
                 }
             }
     
@@ -46,8 +86,10 @@
             }
             
             .city-nav {
+                align-items: center;
                 list-style: none;
-                padding: 0;
+                padding: 0 0 0 1.5rem;
+                text-align: left;
                 
             }
         }

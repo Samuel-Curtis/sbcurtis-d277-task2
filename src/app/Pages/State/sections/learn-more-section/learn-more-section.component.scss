@@ -13,11 +13,16 @@
 
     .form-container {
         border: black solid 1px;
-        bottom: 20%;
+        bottom: 15%;
         max-width: 40%;
-        height: 55%;
+        height: 65%;
         margin-bottom: 15%;
         text-align: center;
+
+        border: solid black;
+        border-radius: 1rem;
+        box-shadow: .25rem .35rem rgba(211, 211, 211, .5);
+
 
         h3 {
             margin: 1.5rem 0 0;
@@ -33,6 +38,10 @@
 
             .invalid {
                 border: solid red 2px;
+            }
+
+            p-button {
+                margin-bottom: 1.5rem;
             }
         }
 

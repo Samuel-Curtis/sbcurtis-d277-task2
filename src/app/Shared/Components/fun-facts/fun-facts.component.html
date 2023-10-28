@@ -8,14 +8,14 @@
             </p>
         </div>
         <div class="button-container">
-            <p-button icon="pi pi-arrow-left" (click)="getPreviousFact()"></p-button>
-            <p-button icon="pi pi-arrow-right" (click)="getNextFact()"></p-button>
+            <p-button icon="pi pi-arrow-left" [rounded]="true" (click)="getPreviousFact()"></p-button>
+            <p-button icon="pi pi-arrow-right" [rounded]="true" (click)="getNextFact()"></p-button>
         </div>
     </div>
 
     <div class="toggle-button">
         <p-button *ngIf="!funFactsClosed" icon="pi pi-times" [text]="true" (click)="toggleFacts()"></p-button>
-        <p-button *ngIf="funFactsClosed" icon="pi pi-chevron-right" [text]="true" (click)="toggleFacts()"></p-button>
+        <p-button *ngIf="funFactsClosed" icon="pi pi-chevron-left" [raised]="true" [text]="true" (click)="toggleFacts()"></p-button>
     </div>
 
 </aside>

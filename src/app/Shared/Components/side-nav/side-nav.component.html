@@ -11,16 +11,25 @@
             <ol class="city-nav">
                 <li *ngIf="!showScrollOptions"><a [routerLink]="['/']">Home</a></li>
                 <li *ngIf="!showScrollOptions">Explore Our Cities</li>
-                <li><a [routerLink]="['/city', 'Richmond']">Richmond</a></li>
-                <li><a [routerLink]="['/city', 'Lynchburg']">Lynchburg</a></li>
-                <li><a [routerLink]="['/city', 'Roanoke']">Roanoke</a></li>
+                <li>
+                    <a [routerLink]="['/city', 'Richmond']">Richmond</a>
+                    <i class="pi pi-arrow-right"></i>
+                </li>
+                <li>
+                    <a [routerLink]="['/city', 'Lynchburg']">Lynchburg</a>
+                    <i class="pi pi-arrow-right"></i>
+                </li>
+                <li>
+                    <a [routerLink]="['/city', 'Roanoke']">Roanoke</a>
+                    <i class="pi pi-arrow-right"></i>
+                </li>
             </ol>
         </nav>
     </div>
 
     <div class="toggle-button">
         <p-button *ngIf="!navbarClosed" icon="pi pi-times" [text]="true" (click)="toggleNav()"></p-button>
-        <p-button *ngIf="navbarClosed" icon="pi pi-chevron-right" [text]="true" (click)="toggleNav()"></p-button>
+        <p-button *ngIf="navbarClosed" [raised]="true" icon="pi pi-chevron-right" [text]="true" (click)="toggleNav()"></p-button>
     </div>
 </div>
 

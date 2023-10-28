@@ -1,5 +1,12 @@
 .state-header-container {
-    border: black solid 2px;
+    // border: black solid 2px;
     display: flex;
-    justify-content: center;    
+    justify-content: center; 
+    
+    h1 {
+        
+        font-size: 5rem;
+        font-weight: 100;
+        text-decoration: underline;
+    }
 }

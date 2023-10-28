@@ -9,7 +9,6 @@ import { stateData } from 'src/assets/data/data';
 })
 export class VirginiaPageComponent {
 
-  // Pull from data
   stateFunFacts: string[] = stateData.data.funFacts
 
   scroll(sectionId: StateSection): void {

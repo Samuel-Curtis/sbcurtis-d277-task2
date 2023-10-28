@@ -5,17 +5,28 @@
     .fun-facts {
         transition: .3s;
         overflow: hidden;
-        border: black solid 1px;
+        box-shadow: .2rem .35rem rgba(255, 255, 255, .25);
+        border-radius: 1rem 0 0 1rem;
+        background: rgba(255, 255, 255, .5);
         width: 0rem;
         height: 20rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         text-align: center;
+
+        h3 {
+            text-decoration: underline;
+        }
+
+        .fact-content {
+            padding-top: -1.5rem;
+        }
 
         .button-container {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
+
         }
     }
 }

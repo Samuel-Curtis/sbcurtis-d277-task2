@@ -10,6 +10,5 @@ import { stateData } from 'src/assets/data/data';
 export class WhyVirginiaSectionComponent {
   header: string = 'Why Virginia';
 
-  // Pull from data
   tiles: WhyVirginiaTile[] = stateData.data.whyVirginiaTiles;
 }
