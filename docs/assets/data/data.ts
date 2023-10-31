@@ -59,7 +59,7 @@ export const richmondData = {
                   link: '',
                   imageUrl: 'assets/bar-chart.svg',
                   imageAltText: 'Picture of Fusion Sushi'
-                },
+                }
               ]
             },
             {
