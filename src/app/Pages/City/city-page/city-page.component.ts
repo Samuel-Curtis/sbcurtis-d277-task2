@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { CityData } from 'src/app/Shared/model/city-data.interface';
 import { lynchburgData, richmondData, roanokeData } from 'src/assets/data/data';
@@ -20,12 +21,12 @@ export class CityPageComponent implements OnInit {
     lynchburgData.data
   ]
 
-  constructor(public activatedRoute: ActivatedRoute) {}
+  constructor(public activatedRoute: ActivatedRoute, public titleService: Title) {}
 
   ngOnInit() {
     this.activatedRoute.params.subscribe(data => {
       this.city = data['city']
-
+      this.titleService.setTitle(this.city)
       this.setCurrentCity()
     })
   }

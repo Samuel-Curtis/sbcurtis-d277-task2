@@ -1,6 +1,6 @@
 export interface CityData {
     name: string;
-    slogan?: string;
+    nickName?: string;
     description: string;
     funFacts?: string[]
     categories?: Category[];
