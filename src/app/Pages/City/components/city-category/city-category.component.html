@@ -9,9 +9,12 @@
                 <h3>{{ item.name }}</h3>
                 <div class="category-item">
                     <div class="category-image">
-                        <img src="{{ item.imageUrl }}" alt="">
+                        <img src="{{ item.imageUrl }}" alt="{{ item.imageAltText }}">
                     </div>
-    
+
+                    <div class="visit-site">
+                        <a href="{{ item.link }}" target="_blank">Visit Site <i class="pi pi-external-link"></i></a>
+                    </div>
                     <div class="category-description">
                         <p>{{ item.description }}</p>
                     </div>

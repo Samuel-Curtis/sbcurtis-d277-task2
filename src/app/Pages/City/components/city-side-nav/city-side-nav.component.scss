@@ -12,8 +12,18 @@
     .category-list-container {
         
         ul {
+            width: 100%;
+
+            li {
+                transition: .5s;
+                border: solid black;
+                padding: .5rem;
+            }
+
             li:hover {
                 cursor: pointer;
+                background-color: rgba(43, 111, 152, .85);
+                transition: .5s;
             }
         }
 

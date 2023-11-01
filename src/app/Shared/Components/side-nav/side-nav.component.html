@@ -10,7 +10,7 @@
             </ul>
             <ol class="city-nav">
                 <li *ngIf="!showScrollOptions"><a [routerLink]="['/']">Home</a></li>
-                <li *ngIf="!showScrollOptions">Explore Our Cities</li>
+                <p *ngIf="!showScrollOptions">Explore Our Cities</p>
                 <li>
                     <a [routerLink]="['/city', 'Richmond']">Richmond</a>
                     <i class="pi pi-arrow-right"></i>
