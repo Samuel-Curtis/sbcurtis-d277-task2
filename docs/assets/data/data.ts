@@ -14,19 +14,19 @@ export const stateData = {
               title: 'Education',
               content: 'Virginia ranks 11th in education across all 50 states. Some of the top schools in Virginia include the University of Virginia, Virginia Tech, and Wiliam and Mary.',
               imageUrl: 'assets/state/education.svg',
-              imageAltText: 'tile 1 alt text'
+              imageAltText: 'Graduation Cap Icon'
             },
             {
               title: 'Public Safety',
               content: 'Virginia ranks 7th in Crime & Corrections, and 8th in Public Safety, so Virginians can sleep soundly at night and feel safe in their homes.',
               imageUrl: 'assets/state/safety.svg',
-              imageAltText: 'tile 2 alt text'
+              imageAltText: 'Shield Icon'
             },
             {
               title: 'Fiscal Stability',
               content: 'Virginia ranks 10th in Fiscal Stability. This stability has allowed government programs to prosper and provides a richer quality of life for Virginians.',
               imageUrl: 'assets/state/money.svg',
-              imageAltText: 'tile 3 alt text'
+              imageAltText: 'Money Icon'
             }
           ]
     }
@@ -35,7 +35,7 @@ export const stateData = {
 export const richmondData = {
     data: {
         name: 'Richmond',
-        nickName: 'Virginia\'s Capital',
+        nickName: 'Virginia\'s Capitol',
         description: 'Richmond was established in 1737 and replaced Williamsburg as the state capitol in 1779. Richmond has since become a large urban area located in east-central Virginia with a growing population of 229,000. Today, Richmond is known for its many colleges including Virginia Commonwealth University, University of Richmond, and Virginia Union University. The VCU campus is intertwined with downtown Richmond so historical buildings remain authentic on the outside while housing offices and classrooms for VCU students and staff. Richmond has something for everyone. Downtown Richmond is home to several arts, science, and history museums while also only blocks away from many recreational activities along the river.',
         funFacts: [
             'Richmond, Virginia was named after Richmond, London because the view of the James River is similar to the view of the Thames River in England.',
